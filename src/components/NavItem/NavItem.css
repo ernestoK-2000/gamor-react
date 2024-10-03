@@ -1,0 +1,27 @@
+.nav-item{
+    position: relative;
+    width: fit-content;
+  }
+  .text{
+    position: relative;
+  }
+  .ellipse {
+    opacity: 0;
+    transition: all 300ms ease-out;
+    width: 75px;
+    height: 30px;
+    rotate: -14deg;
+    left: -7px;
+    bottom: -7px;
+    
+    border-radius: 50%;
+    position: absolute;
+    background: 
+      radial-gradient(closest-side, white 95%, transparent 99%),
+      conic-gradient(transparent 0%, transparent 15%, darkblue 17%, darkblue 84%, transparent 86%);    
+  }
+  .nav-item:hover .ellipse{
+    opacity: 1;
+  }
+  
+  
