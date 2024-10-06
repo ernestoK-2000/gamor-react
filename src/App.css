@@ -1,13 +1,16 @@
 .App {
   background-color: var(--color-background-dark);
   height: 100vh;
-  
+  color: var(--color-text);
+  transition: all 300ms;
 }
 
 .App.light{
   --color-primary: #7E34EE;
   --color-secondary: #E9742F;
   --color-terciary: #1A2028;
+  --color-text: #393B3F;
+  --color-text-emphasis: #000;
   --color-background: #F9FBFC;
   --color-background-light: #FFFFFF;
   --color-background-dark: #F0F2F4;
@@ -17,7 +20,10 @@
   --color-primary: #E9742F;
   --color-secondary: #7E34EE;
   --color-terciary: #13171C;
+  --color-text: #7B8088;
+  --color-text-emphasis: #FCFEFF;
   --color-background: #21272F;
   --color-background-light: #30363E;
   --color-background-dark: #1A2028;
 }
+

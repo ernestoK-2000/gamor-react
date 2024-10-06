@@ -1,0 +1,186 @@
+#header {
+  padding: 0 5%;
+  display: flex;
+  gap: 16px;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  z-index: 999;
+}
+
+#userIconWrapper{
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.logotitle {
+  font-size: 1.7em;
+  color: var(--color-text-emphasis);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+  transition: 300ms;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--color-primary);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 300ms ease-out;
+}
+
+/* nav ul li a:hover::after {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+nav ul {
+  padding-inline-start: 0;
+}
+
+.icon-nav {
+  display: none;
+  cursor: pointer;
+}
+
+.icon-theme {
+  cursor: pointer;
+}
+
+.icon {
+  color: var(--color-text-emphasis);
+  font-size: 24px;
+}
+
+.signin-btn {
+  background: none;
+  color: var(--color-text-emphasis);
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.account-btn {
+  background: none;
+  background-color: var(--color-terciary);
+  color: #fcfeff;
+  border: 1px solid var(--color-background-light);
+  padding: 12px 20px 14px 20px;
+  border-radius: 50px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.navBar-btns {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 930px) {
+  .userMenuHandler:not(:focus-within) .user-btn {
+    display: none;
+  }
+  .icon-nav {
+    display: block;
+  }
+  .icon {
+    font-size: 24px;
+  }
+  nav ul li {
+    display: block;
+    margin: 24px;
+  }
+  nav ul {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: -242px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 300ms left;
+
+    /* From https://css.glass */
+    background: var(--color-background-dark);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid var(--color-background-light);
+  }
+  .user-btn {
+    margin-top: 0;
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 64px;
+    border-radius: 20px;
+    right: calc(36px + 5%);
+
+    height: fit-content;
+    padding: 24px;
+    z-index: 2;
+    transition: 300ms left;
+    /* From https://css.glass */
+    background: var(--color-background);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .user-btn .account-btn {
+    background: none;
+    color: var(--color-text-emphasis);
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .menu-icon {
+    cursor: pointer;
+  }
+  .close-icon {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    cursor: pointer;
+  }
+}
+
+/* @media only screen and (max-width: 440px) {
+
+
+} */

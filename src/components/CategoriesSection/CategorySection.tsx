@@ -1,10 +1,14 @@
-import React from 'react'
-import './CategorySection.css'
+import React from "react";
+import "./CategorySection.css";
+import CategoryCard from "../CategoryCard/CategoryCard";
 
 function CategorySection() {
   return (
-    <div>CategorySection</div>
-  )
+    <>
+      <div>Trending Categories</div>
+      <CategoryCard></CategoryCard>
+    </>
+  );
 }
 
-export default CategorySection
+export default CategorySection;

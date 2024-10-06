@@ -3,7 +3,10 @@ import './PlatformButton.css'
 
 function PlatformButton() {
   return (
-    <div>PlatformButton</div>
+  <>
+    <div>Choose Platform</div>
+    <PlatformButton></PlatformButton>
+  </>
   )
 }
 

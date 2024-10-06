@@ -1,10 +1,14 @@
-import React from 'react'
-import './SearchGame.css'
+import React from "react";
+import "./SearchGame.css";
+import SearchGameCard from "../SearchGameCard/SearchGameCard";
 
 function SearchGame() {
   return (
-    <div>SearchGame</div>
-  )
+    <>
+      <div>Searching Game</div>
+      <SearchGameCard></SearchGameCard>
+    </>
+  );
 }
 
-export default SearchGame
+export default SearchGame;
