@@ -1,0 +1,15 @@
+#mcs3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-background);
+  padding: 24px;
+  gap: 24px;
+  flex-grow: 1;
+  min-width: 260px;
+}
+
+.mcs3-numeration{
+    font-size: 1.2em;
+}
+

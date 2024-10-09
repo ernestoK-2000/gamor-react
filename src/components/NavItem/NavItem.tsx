@@ -6,17 +6,18 @@ import { Link, NavLink } from "react-router-dom";
 interface Props {
     text: string;
     url: string;
+    onCloseMenu: ()=>void
   }
 
-const NavItem = ({text, url}: Props) => {
+const NavItem = ({text, url, onCloseMenu}: Props) => {
   return (
     <li className="nav-item">
-      <NavLink to={url} className={({ isActive, isPending }) =>
+      <NavLink onClick={onCloseMenu} to={url} className={({ isActive, isPending }) =>
                       isActive
                         ? "activeE ellipse"
                         : isPending
-                        ? "pending ellipse"
-                        : "ellipse"
+                        ? "pending ellipse invisible"
+                        : "ellipse invisible"
                     } ></NavLink>
       <NavLink to={url} className={({ isActive, isPending }) =>
                       isActive

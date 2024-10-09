@@ -1,0 +1,30 @@
+.platform-btn {
+  padding: 8px 8px;
+  border-radius: 50px;
+}
+
+#platform-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#mcs3-text1 {
+  font-weight: 500;
+  color: var(--color-text-emphasis);
+}
+
+.platform-btn.active {
+  background-color: var(--color-background-light);
+  font-weight: 500;
+  padding: 12px 22px;
+  border: solid 1px var(--color-background-dark);
+}
+
+.platform-btn-container {
+  background-color: var(--color-background-dark);
+  padding: 4px;
+  border-radius: 50px;
+  width: fit-content;
+  border: solid 1px var(--color-background-dark);
+}

@@ -131,7 +131,7 @@ nav ul {
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 2;
+    z-index: 999;
     transition: 300ms left;
 
     /* From https://css.glass */

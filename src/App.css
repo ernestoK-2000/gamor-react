@@ -1,6 +1,7 @@
 .App {
   background-color: var(--color-background-dark);
   height: 100vh;
+  overflow:auto;
   color: var(--color-text);
   transition: all 300ms;
 }
@@ -14,6 +15,7 @@
   --color-background: #F9FBFC;
   --color-background-light: #FFFFFF;
   --color-background-dark: #F0F2F4;
+  --color-box-shadow: lightgray;
 }
 
 .App.dark{
@@ -25,5 +27,66 @@
   --color-background: #21272F;
   --color-background-light: #30363E;
   --color-background-dark: #1A2028;
+  --color-box-shadow: black;
+}
+
+.ellipse {
+  transition: all 300ms ease-out;
+  width: 75px;
+  height: 30px;
+  rotate: -14deg;
+  left: -7px;
+  bottom: -7px;
+
+  border-radius: 50%;
+  position: absolute;
+  background: radial-gradient(
+      closest-side,
+      var(--color-background-dark) 95%,
+      transparent 99%
+    ),
+    conic-gradient(
+      transparent 0%,
+      transparent 15%,
+      var(--color-primary) 17%,
+      var(--color-primary) 84%,
+      transparent 86%
+    );
+}
+
+.ellipseDec {
+  transition: all 300ms ease-out;
+  width: 190px;
+  height: 70px;
+  rotate: -14deg;
+
+  border-radius: 50%;
+  position: absolute;
+  background: radial-gradient(
+      closest-side,
+      var(--color-background) 98%,
+      transparent 99%
+    ),
+    conic-gradient(
+      transparent 0%,
+      transparent 15%,
+      var(--color-secondary) 17%,
+      var(--color-secondary) 84%,
+      transparent 86%
+    );
+}
+
+.nude-btn{
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-text-emphasis);
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.invisible{
+  opacity: 0;
 }
 

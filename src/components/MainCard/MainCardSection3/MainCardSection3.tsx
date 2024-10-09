@@ -3,12 +3,17 @@ import './MainCardSection3.css'
 import Platform from '../../Platform/Platform'
 import SearchGame from '../../SearchGame/SearchGame'
 
-function MainCardSection3() {
+interface Props{
+  setFollowing: (following: string[]) => void;
+  following: string[];
+}
+
+function MainCardSection3({following, setFollowing}: Props) {
   return (
-    <>
+    <div id='mcs3'>
         <Platform></Platform>
-        <SearchGame></SearchGame>
-    </>
+        <SearchGame following={following} setFollowing={setFollowing}></SearchGame>
+    </div>
   )
 }
 

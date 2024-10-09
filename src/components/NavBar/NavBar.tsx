@@ -9,6 +9,7 @@ import {
 } from "react-icons/md";
 import NavItem from "../NavItem/NavItem";
 import { AppTheme } from "../../models/models";
+import { NavLink } from "react-router-dom";
 
 interface Props {
   theme: string;
@@ -28,12 +29,15 @@ function NavBar({ theme, setTheme }: Props) {
   }
   function onCloseMenu(): void {
     if (menuRef?.current) {
-      console.log(menuRef.current);
       menuRef.current.style.left = "-242px";
     }
   }
   function onChangeTheme(themeType: AppTheme) {
     setTheme(themeType);
+  }
+  function closeUserMenu(){
+    (document.activeElement as HTMLElement).blur()
+    onUserMenuClose()
   }
   function onUserMenuClose(){
     setIsUserMenuOpen(false)
@@ -52,10 +56,10 @@ function NavBar({ theme, setTheme }: Props) {
       
       
       <ul ref={menuRef} id="sideMenu">
-        <NavItem url="#" text="Home" />
-        <NavItem url="/Stream" text="Stream" />
-        <NavItem url="/Party" text="Party" />
-        <NavItem url="/Premium" text="Premium" />
+        <NavItem onCloseMenu={onCloseMenu} url="" text="Home" />
+        <NavItem onCloseMenu={onCloseMenu} url="/Stream" text="Stream" />
+        <NavItem onCloseMenu={onCloseMenu} url="/Party" text="Party" />
+        <NavItem onCloseMenu={onCloseMenu} url="/Premium" text="Premium" />
         <MdClose className="icon icon-nav close-icon" onClick={onCloseMenu} />
       </ul>
       <MdMenu className="icon icon-nav menu-icon" onClick={onOpenMenu} />
@@ -64,9 +68,9 @@ function NavBar({ theme, setTheme }: Props) {
       </div>
       <div className="navBar-btns">
         <div className="userMenuHandler">
-          <div className="navBar-btns user-btn">
-            <button className="signin-btn">Sign in</button>
-            <button className="account-btn">Create account</button>
+          <div onClick={closeUserMenu} className="navBar-btns user-btn">
+            <NavLink to={"/login"}><button className="signin-btn">Sign in</button></NavLink>
+            <NavLink to={"/signup"}><button className="account-btn">Create account</button></NavLink>
           </div>
           
           <button ref={userBtnRef} onBlur={onUserMenuClose} onClick={onClickUserBtn} id="userIconWrapper">

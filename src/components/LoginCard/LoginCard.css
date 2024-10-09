@@ -1,0 +1,66 @@
+#loginForm{
+    
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+
+.row{
+    display: flex;
+    align-items: baseline;
+    justify-content: end;
+    gap: 8px;
+}
+
+input{
+    border-radius: 20px;
+    padding: 8px;
+    background-color: var(--color-background-light);
+    color: var(--color-text-emphasis);
+}
+
+.form-btns{
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+.submit-login{
+    background-color: var(--color-primary);
+    padding: 12px 24px;
+    color: white;
+    border-radius: 50px;
+}
+
+.form-controls{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cancel-login{
+    border: solid 2px black;
+    border-radius: 50px;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.invalid{
+    border: 1px solid red;
+}
+
+.error-msg{
+    color: red;
+    min-width: 100%;
+    max-width: 0;
+    display: none;
+    font-weight: 500;
+}
+
+.show{
+    display: block;
+}

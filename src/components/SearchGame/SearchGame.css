@@ -1,0 +1,11 @@
+#mcs3-text2{
+    font-weight: 500;
+    color: var(--color-text-emphasis);
+}
+
+#searchgame-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
