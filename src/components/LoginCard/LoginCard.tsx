@@ -3,8 +3,8 @@ import "./LoginCard.css";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function LoginCard() {
-  const navigate = useNavigate()
-  const errorRef = useRef<HTMLDivElement>(null)
+  const navigate = useNavigate();
+  const errorRef = useRef<HTMLDivElement>(null);
 
   function login(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -12,12 +12,11 @@ function LoginCard() {
     const form = event.target;
     const formData = new FormData(form as HTMLFormElement);
     const formJson = Object.fromEntries(formData.entries());
-    if(formJson["username"] && formJson["password"]){
-      
+    if (formJson["username"] && formJson["password"]) {
       //login action
-      navigate("../")
-    }else{
-      errorRef.current?.classList.add("show")
+      navigate("../");
+    } else {
+      errorRef.current?.classList.add("show");
     }
   }
 
@@ -33,7 +32,9 @@ function LoginCard() {
           <input id="password" type="password" name="password" />
         </div>
       </div>
-      <div ref={errorRef} className="error-msg">Por favor, llene los campos anteriores antes de continuar</div>
+      <div ref={errorRef} className="error-msg">
+        Por favor, llene los campos anteriores antes de continuar
+      </div>
 
       <div className="form-btns">
         <button className="nude-btn submit-login" type="submit">

@@ -1,10 +1,9 @@
-.main-card{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 24px 5%;
-    height: max(550px, fit-content);
+.main-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 24px 5%;
+  height: max(550px, fit-content);
 }
-

@@ -1,25 +1,22 @@
-.nav-item{
-    position: relative;
-    width: fit-content;
-  }
-  .text{
-    position: relative;
-  }
-  .nav-item:hover .ellipse{
-    opacity: 1;
-  }
-  .ellipse.activeE{
-    opacity: 1;
-  }
+.nav-item {
+  position: relative;
+  width: fit-content;
+}
+.text {
+  position: relative;
+}
+.nav-item:hover .ellipse {
+  opacity: 1;
+}
+.ellipse.activeE {
+  opacity: 1;
+}
 
-  .nav-item:hover .text{
-    color: var(--color-primary);
-    text-shadow: 1px 1px 1px #000000;
-  }
-  .text.activeT{
-    color: var(--color-primary);
-    text-shadow: 1px 1px 1px #000000;
-  }
-  
-  
-  
+.nav-item:hover .text {
+  color: var(--color-primary);
+  text-shadow: 1px 1px 1px #000000;
+}
+.text.activeT {
+  color: var(--color-primary);
+  text-shadow: 1px 1px 1px #000000;
+}

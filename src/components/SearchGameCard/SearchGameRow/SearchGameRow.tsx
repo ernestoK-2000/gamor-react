@@ -12,9 +12,9 @@ interface Props {
 }
 
 function SearchGameRow({ num, name, avatars, following, setFollowing }: Props) {
-  function onAddFollow(event: React.PointerEvent<HTMLButtonElement>){
-    if(following.indexOf(name) === -1){
-      setFollowing([...following, name])
+  function onAddFollow(event: React.PointerEvent<HTMLButtonElement>) {
+    if (following.indexOf(name) === -1) {
+      setFollowing([...following, name]);
     }
   }
 
@@ -32,7 +32,7 @@ function SearchGameRow({ num, name, avatars, following, setFollowing }: Props) {
           color2={avatars.at(1)?.color}
         />
         <button onClick={onAddFollow} className="nude-btn add-btn">
-          <MdAdd style={{pointerEvents: "none"}}/>
+          <MdAdd style={{ pointerEvents: "none" }} />
         </button>
       </div>
     </li>

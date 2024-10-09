@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
-interface Props{
-  id?: string
+interface Props {
+  id?: string;
 }
 
-function EllipsisDec({id}: Props) {
-  return (
-    <div id={id ? id : ""} className='ellipseDec'></div>
-  )
+function EllipsisDec({ id }: Props) {
+  return <div id={id ? id : ""} className="ellipseDec"></div>;
 }
 
-export default EllipsisDec
+export default EllipsisDec;

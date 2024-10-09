@@ -1,64 +1,63 @@
-#sgc{
-    background-color: var(--color-background-dark);
-    padding: 16px 16px 0 16px;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    color: var(--color-text-emphasis);
+#sgc {
+  background-color: var(--color-background-dark);
+  padding: 16px 16px 0 16px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-emphasis);
 }
 
-#sgc-list{
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+#sgc-list {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
-li{
-    list-style: none;
-    
+li {
+  list-style: none;
 }
-ul.filter-settings{
-    padding: 0;
-    background-color: var(--color-background-light);
-    box-shadow: 3px 3px 5px var(--color-box-shadow);
-    padding: 16px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: start;
-    justify-content: start;
-    width: max-content;
-    right: 0px;
-    top: 16px;
-    z-index: 3;
-    position: absolute;
-}
-
-#sgc-header:not(:focus-within) #filter .filter-settings{
-    display: none;
+ul.filter-settings {
+  padding: 0;
+  background-color: var(--color-background-light);
+  box-shadow: 3px 3px 5px var(--color-box-shadow);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+  justify-content: start;
+  width: max-content;
+  right: 0px;
+  top: 16px;
+  z-index: 3;
+  position: absolute;
 }
 
-#filter{
-    position: relative;
+#sgc-header:not(:focus-within) #filter .filter-settings {
+  display: none;
 }
 
-#sgc-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#filter {
+  position: relative;
 }
 
-#sgc hr{
-    width: calc(100%);
-    border-color: var(--color-background);
+#sgc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#sgc-header button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
+#sgc hr {
+  width: calc(100%);
+  border-color: var(--color-background);
+}
+
+#sgc-header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
 }

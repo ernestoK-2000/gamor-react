@@ -1,13 +1,13 @@
-import React from 'react'
-import './PlatformButton.css'
+import React from "react";
+import "./PlatformButton.css";
 
 function PlatformButton() {
   return (
-  <>
-    <div>Choose Platform</div>
-    <PlatformButton></PlatformButton>
-  </>
-  )
+    <>
+      <div>Choose Platform</div>
+      <PlatformButton></PlatformButton>
+    </>
+  );
 }
 
-export default PlatformButton
+export default PlatformButton;

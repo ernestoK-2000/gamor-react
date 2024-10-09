@@ -20,7 +20,7 @@ function NavBar({ theme, setTheme }: Props) {
   const menuRef = useRef<null | HTMLUListElement>(null);
   const userBtnRef = useRef<null | HTMLButtonElement>(null);
 
-  const [isUserMenuOpen, setIsUserMenuOpen] =  useState<boolean>(false)
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState<boolean>(false);
 
   function onOpenMenu(): void {
     if (menuRef?.current) {
@@ -35,26 +35,24 @@ function NavBar({ theme, setTheme }: Props) {
   function onChangeTheme(themeType: AppTheme) {
     setTheme(themeType);
   }
-  function closeUserMenu(){
-    (document.activeElement as HTMLElement).blur()
-    onUserMenuClose()
+  function closeUserMenu() {
+    (document.activeElement as HTMLElement).blur();
+    onUserMenuClose();
   }
-  function onUserMenuClose(){
-    setIsUserMenuOpen(false)
+  function onUserMenuClose() {
+    setIsUserMenuOpen(false);
   }
-  function onClickUserBtn(){
-    if(isUserMenuOpen){
-      (document.activeElement as HTMLElement).blur()
-    }else{
-      userBtnRef?.current?.focus()
-      setIsUserMenuOpen(true)
+  function onClickUserBtn() {
+    if (isUserMenuOpen) {
+      (document.activeElement as HTMLElement).blur();
+    } else {
+      userBtnRef?.current?.focus();
+      setIsUserMenuOpen(true);
     }
   }
 
   return (
     <nav id="header">
-      
-      
       <ul ref={menuRef} id="sideMenu">
         <NavItem onCloseMenu={onCloseMenu} url="" text="Home" />
         <NavItem onCloseMenu={onCloseMenu} url="/Stream" text="Stream" />
@@ -69,11 +67,20 @@ function NavBar({ theme, setTheme }: Props) {
       <div className="navBar-btns">
         <div className="userMenuHandler">
           <div onClick={closeUserMenu} className="navBar-btns user-btn">
-            <NavLink to={"/login"}><button className="signin-btn">Sign in</button></NavLink>
-            <NavLink to={"/signup"}><button className="account-btn">Create account</button></NavLink>
+            <NavLink to={"/login"}>
+              <button className="signin-btn">Sign in</button>
+            </NavLink>
+            <NavLink to={"/signup"}>
+              <button className="account-btn">Create account</button>
+            </NavLink>
           </div>
-          
-          <button ref={userBtnRef} onBlur={onUserMenuClose} onClick={onClickUserBtn} id="userIconWrapper">
+
+          <button
+            ref={userBtnRef}
+            onBlur={onUserMenuClose}
+            onClick={onClickUserBtn}
+            id="userIconWrapper"
+          >
             <MdAccountCircle className="icon icon-nav" />
           </button>
         </div>

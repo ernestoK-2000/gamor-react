@@ -1,21 +1,20 @@
-.avatar{
-    height: 24px;
-    border-radius: 50px;
-
+.avatar {
+  height: 24px;
+  border-radius: 50px;
 }
 
-#avatar-container{
-    position: relative;
-    height: 24px
+#avatar-container {
+  position: relative;
+  height: 24px;
 }
 
-.img1{
-    z-index: 2;
-    position: relative;
+.img1 {
+  z-index: 2;
+  position: relative;
 }
 
-.img2{
-    position: absolute;
-    left: 16px;
-    z-index: 1;
+.img2 {
+  position: absolute;
+  left: 16px;
+  z-index: 1;
 }

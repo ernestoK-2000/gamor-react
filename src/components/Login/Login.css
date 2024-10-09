@@ -12,9 +12,9 @@
   margin-bottom: 64px;
 }
 
-.login-title{
-    color: var(--color-text-emphasis);
-    font-size: 1.5em;
-    margin-bottom: 16px;
-    font-weight: 500;
+.login-title {
+  color: var(--color-text-emphasis);
+  font-size: 1.5em;
+  margin-bottom: 16px;
+  font-weight: 500;
 }

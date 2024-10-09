@@ -1,37 +1,37 @@
-.sgc-numeration{
-    background-color: var(--color-background-light);
-    height: 24px;
-    width: 24px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    color: var(--color-text-emphasis);
+.sgc-numeration {
+  background-color: var(--color-background-light);
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-emphasis);
 }
 
-.row-right{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+.row-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
-.row-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.text-container{
-    display: flex;
-    gap: 8px;
+.text-container {
+  display: flex;
+  gap: 8px;
 }
 
-.add-btn{
-    background-color: var(--color-background-light);
-    height: 28px;
-    width: 28px;
-    border-radius: 6px;
-    margin-left: 16px;
+.add-btn {
+  background-color: var(--color-background-light);
+  height: 28px;
+  width: 28px;
+  border-radius: 6px;
+  margin-left: 16px;
 }

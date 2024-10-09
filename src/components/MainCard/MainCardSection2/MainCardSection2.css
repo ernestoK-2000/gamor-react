@@ -11,7 +11,7 @@
 }
 
 #img-fortnite {
-  height: 350px
+  height: 350px;
 }
 
 #mcs2-title {
@@ -64,7 +64,7 @@
 }
 
 @media only screen and (max-width: 1110px) {
-  #mcs2{
+  #mcs2 {
     order: -1;
     width: 100%;
   }

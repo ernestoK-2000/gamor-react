@@ -1,32 +1,32 @@
 .App {
   background-color: var(--color-background-dark);
   height: 100vh;
-  overflow:auto;
+  overflow: auto;
   color: var(--color-text);
   transition: all 300ms;
 }
 
-.App.light{
-  --color-primary: #7E34EE;
-  --color-secondary: #E9742F;
-  --color-terciary: #1A2028;
-  --color-text: #393B3F;
+.App.light {
+  --color-primary: #7e34ee;
+  --color-secondary: #e9742f;
+  --color-terciary: #1a2028;
+  --color-text: #393b3f;
   --color-text-emphasis: #000;
-  --color-background: #F9FBFC;
-  --color-background-light: #FFFFFF;
-  --color-background-dark: #F0F2F4;
+  --color-background: #f9fbfc;
+  --color-background-light: #ffffff;
+  --color-background-dark: #f0f2f4;
   --color-box-shadow: lightgray;
 }
 
-.App.dark{
-  --color-primary: #E9742F;
-  --color-secondary: #7E34EE;
-  --color-terciary: #13171C;
-  --color-text: #7B8088;
-  --color-text-emphasis: #FCFEFF;
-  --color-background: #21272F;
-  --color-background-light: #30363E;
-  --color-background-dark: #1A2028;
+.App.dark {
+  --color-primary: #e9742f;
+  --color-secondary: #7e34ee;
+  --color-terciary: #13171c;
+  --color-text: #7b8088;
+  --color-text-emphasis: #fcfeff;
+  --color-background: #21272f;
+  --color-background-light: #30363e;
+  --color-background-dark: #1a2028;
   --color-box-shadow: black;
 }
 
@@ -76,7 +76,7 @@
     );
 }
 
-.nude-btn{
+.nude-btn {
   background: none;
   border: none;
   padding: 0;
@@ -86,7 +86,6 @@
   outline: inherit;
 }
 
-.invisible{
+.invisible {
   opacity: 0;
 }
-

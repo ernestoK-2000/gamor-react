@@ -1,20 +1,20 @@
 import React from "react";
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
-import "./NotFound.css"
+import "./NotFound.css";
 
 function NotFound() {
   const error = useRouteError();
-  let errorMessage = ""
+  let errorMessage = "";
   if (isRouteErrorResponse(error)) {
     // error is type `ErrorResponse`
     errorMessage = error.statusText;
   } else if (error instanceof Error) {
     errorMessage = error.message;
-  } else if (typeof error === 'string') {
+  } else if (typeof error === "string") {
     errorMessage = error;
   } else {
     console.error(error);
-    errorMessage = 'Unknown error';
+    errorMessage = "Unknown error";
   }
 
   return (
@@ -25,7 +25,7 @@ function NotFound() {
         <i>{errorMessage}</i>
       </p>
     </div>
-  )
+  );
 }
 
 export default NotFound;

@@ -3,15 +3,13 @@ import "./MainCardSection2.css";
 import { TiUserAdd } from "react-icons/ti";
 import { AppTheme } from "../../../models/models";
 
-interface Props{
+interface Props {
   theme: AppTheme;
-  following: string[]
+  following: string[];
 }
 
-function MainCardSection2({theme, following}: Props) {
-  let followingList = following.map((f, i) => (
-    <li key={i}>{f}</li>
-  ))
+function MainCardSection2({ theme, following }: Props) {
+  let followingList = following.map((f, i) => <li key={i}>{f}</li>);
   return (
     <div id="mcs2">
       <div className="text-content">
@@ -25,14 +23,15 @@ function MainCardSection2({theme, following}: Props) {
         </div>
         11 : 45
       </div>
-      <div>
-        {followingList}
-      </div>
-      
+      <div>{followingList}</div>
 
       <img
         id="img-fortnite"
-        src={theme === AppTheme.LIGHT ? "img/fortnite_light.png" : "img/fortnite_dark.png"}
+        src={
+          theme === AppTheme.LIGHT
+            ? "img/fortnite_light.png"
+            : "img/fortnite_dark.png"
+        }
         alt="fortnite game character"
       />
     </div>
