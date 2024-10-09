@@ -9,7 +9,7 @@ interface Props {
 }
 
 function MainCardSection2({ theme, following }: Props) {
-  let followingList = following.map((f, i) => <li key={i}>{f}</li>);
+  let followingList = following.map((f, i) => <li className="follow-item" key={i}>{f}</li>);
   return (
     <div id="mcs2">
       <div className="text-content">

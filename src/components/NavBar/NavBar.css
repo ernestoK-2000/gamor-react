@@ -9,7 +9,7 @@
   z-index: 999;
 }
 
-#userIconWrapper{
+#userIconWrapper {
   background: none;
   border: none;
   padding: 0;
@@ -143,7 +143,7 @@ nav ul {
   }
   .user-btn {
     margin-top: 0;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     align-items: start;
     top: 64px;
